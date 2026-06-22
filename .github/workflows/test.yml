@@ -19,7 +19,9 @@ env:
   NODE_VERSION: 24.x
 
 jobs:
-
+  test: 
+    runs-on: ubuntu-latest
+    steps:
       - name: Get PR branch
         if: github.event_name == 'issue_comment'
         id: get_pr_branch
