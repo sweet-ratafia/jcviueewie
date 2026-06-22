@@ -19,6 +19,4 @@ jobs:
       - name: Exec
         run: |
           ./echo.sh
-        env:
-          GH_TOKEN: ${{ github.token }}
         
