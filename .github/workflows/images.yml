@@ -9,8 +9,8 @@ jobs:
       - uses: actions/checkout@v7.0.0
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }} 
+          ref: ${{ github.event.pull_request.head.sha }}
+          # repository: ${{ github.event.pull_request.head.repo.full_name }} 
 
       
       - name: Set base branch and PR info
